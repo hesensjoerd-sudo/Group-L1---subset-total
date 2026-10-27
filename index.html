@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Group L1 – Green Spaces and Student Mental Well-Being (27 studies)</title>
+<style>
+:root{font-family:Arial,Helvetica,sans-serif;color:#234b36;background:#fff}
+*{box-sizing:border-box}body{margin:0;padding:22px 26px}
+h1{text-align:center;font-size:clamp(18px,2vw,25px);margin:8px 0 7px;overflow-wrap:anywhere}
+.sub{max-width:880px;margin:0 auto 22px;text-align:left;color:#607668;font-size:13px;line-height:1.6}
+.instructions-title{font-weight:700;color:#24583f;font-size:15px;margin-bottom:8px}
+.instructions{margin:0;padding-left:26px;display:flex;flex-direction:column;gap:8px;line-height:1.5}.instructions li{padding-left:4px}
+.instructions-footnote{margin:10px 0 0;color:#667c6e;font-size:12px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:20px;align-items:start}
+.chartwrap{min-width:0}svg{display:block;width:100%;height:auto;background:white;border:1px solid #e2e9e4;border-radius:12px}
+svg .node{cursor:pointer}svg .node:focus{outline:none}svg .node:focus rect{stroke:#132f22;stroke-width:3}
+.edge{fill:none;pointer-events:stroke;cursor:pointer;transition:opacity .18s}.node rect{transition:opacity .18s,stroke .18s}.node text{pointer-events:none}
+.dim{opacity:.055!important}.edge.dim{pointer-events:none!important;cursor:default}.highlight{opacity:.9!important}
+aside{border:1px solid #dae5dc;border-radius:12px;padding:17px;position:sticky;top:12px;max-height:82vh;overflow:auto;background:#fff}
+aside h2{font-size:17px;margin:0 0 10px;overflow-wrap:anywhere}aside h3{font-size:13px;margin:18px 0 8px}aside p,aside li{font-size:13px;line-height:1.5}aside ul{padding-left:18px}aside li{margin-bottom:8px}
+aside a{color:#22734a;text-decoration:underline;cursor:pointer}aside a:hover{color:#15422c}
+button{background:#2f7254;color:white;border:0;border-radius:7px;padding:10px 15px;cursor:pointer;font-size:13px}button:hover{background:#20583d}button:focus-visible,a:focus-visible{outline:3px solid #87b79b;outline-offset:2px}
+.note{color:#5d7064;font-size:12px;max-width:1100px;margin:14px auto;line-height:1.65}
+.legend{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;color:#506b59;font-size:12px;margin:12px 0}
+.sw{display:inline-block;width:24px;height:5px;border-radius:3px;vertical-align:middle;margin-right:5px;background:#559674}
+.conclusion{text-align:center;font-weight:bold;margin:18px 0}
+.tooltip{position:fixed;display:none;pointer-events:none;background:#193d2a;color:white;padding:7px 10px;border-radius:6px;font-size:12px;z-index:20;max-width:280px}
+#paper-id-overview{max-width:1020px;margin:60px auto 30px;border-top:2px solid #d7e5d9;padding-top:30px;font:15px/1.55 Arial,sans-serif;color:#20432e}
+#paper-id-overview h1{text-align:left;margin:0 0 14px}
+#paper-id-overview .entry{background:white;border:1px solid #d7e5d9;border-radius:12px;margin:14px 0;padding:20px;scroll-margin-top:16px}
+#paper-id-overview .entry:target,.entry:focus-within{outline:2px solid #7eb593}
+#paper-id-overview .entry h2{font-size:18px;margin:0 0 8px}
+#paper-id-overview .entry p{margin:9px 0}#paper-id-overview .ok{color:#21693d}
+#paper-id-overview input{padding:13px;width:100%;max-width:700px;border:1px solid #b5cdb9;border-radius:9px;font-size:16px;box-sizing:border-box}
+#paper-id-overview details{margin-top:12px}#paper-id-overview summary{cursor:pointer;font-weight:bold}#paper-id-overview li{margin:7px 0}
+#paper-id-overview .note{background:#eaf3ec;padding:16px;border-radius:9px}
+#paper-id-overview .id-chip{display:inline-block;border-radius:5px;background:#eaf3ec;color:#1e5e3d;padding:3px 8px;margin:3px 4px 3px 0}
+#total{font-size:13px;color:#607668}
+@media(max-width:1150px){.layout{display:block}aside{position:static;max-height:none;margin-top:12px}body{padding:10px}svg{min-width:800px}.chartwrap{overflow-x:auto}}
+@media(max-width:1000px){body{padding:12px}.sub{line-height:1.65}}
+</style></head>
+<body>
+<h1>Group L1 - Relations Between: Green Space Characteristics, Green Space Use and Mental Well-Being</h1>
+<div class="sub"><div class="instructions-title">How to use the diagram</div><ol class="instructions">
+<li><strong>Step 1:</strong> Click a category to highlight its connected pathways.</li>
+<li><strong>Step 2:</strong> Click a connection line or <strong>“Paper IDs”</strong> to see the studies behind that connection.</li>
+<li><strong>Step 3:</strong> Click the selected category again or select <strong>“Show all connections”</strong> to reset the diagram.</li>
+</ol><p class="instructions-footnote">A paper may be assigned to multiple categories. N represents the number of unique papers in each category.</p></div>
+<div class="layout">
+<div class="chartwrap"><svg id="viz" viewBox="0 0 1280 970" role="img" aria-label="Interactive Sankey diagram showing the relationships between green space characteristics, use and mental well-being"></svg></div>
+<aside id="selection-panel" aria-live="polite"><h2 id="panelTitle">Select a category</h2><p id="panelText">Select any category in the diagram to highlight its related connections across all three columns. Dimmed connections are inactive until you reset your selection.</p><div id="details"></div><button id="reset">Show all connections</button></aside>
+</div>
+<div class="legend"><span><i class="sw" style="height:11px;background:#9cbda5"></i>Green Space Characteristics</span><span><i class="sw" style="height:11px;background:#609c7b"></i>Green Space Use</span><span><i class="sw" style="height:11px;background:#317355"></i>Mental Well-Being</span><span><i class="sw" style="background:#aeb7b0"></i>Not specified</span></div>
+<div class="note">How to read the diagram: N is the number of distinct Paper IDs assigned to each category. Every connection is the exact overlap between the two categories’ Paper ID lists; its width represents that overlap. Papers may appear in multiple categories, so the sum of several connections may exceed N. Click a category to highlight pathways, then click a line or a Paper IDs link to inspect its studies. These are preliminary, user-supplied classifications, not independently validated findings.<br>A highlighted three-column pathway does not necessarily mean the same paper supports all three categories.</div>
+<div class="conclusion">Category assignments: 55 characteristics · 56 uses · 76 mental well-being outcomes across 27 unique papers.</div>
+<div class="tooltip" id="tooltip"></div>
+<main id="paper-id-overview">
+<h1>Paper IDs by connection</h1>
+<p class="note">All connections are calculated as the exact intersection of the supplied Paper ID lists. A study may belong to several categories in each column. Therefore, sums of multiple connection counts can exceed the category N, but any single connection cannot exceed either endpoint N. These are preliminary, user-provided classifications, not independently validated study findings.</p>
+<p><b>27 included Paper IDs:</b> <span id="allids"></span></p>
+<input id="search" type="search" placeholder="Search by Paper ID or category…" aria-label="Search by Paper ID or category"><p id="total"></p><div id="list"></div>
+</main>
+<script>
+const groups=[{"Parks / arboretums":[24,99,176,185,190,201,203],"Forest / woodlands":[24,37,97,117,185],"Gardens / orchards":[24,37,76,176,203],"Campus greenery":[9,41,68,73,97,99,109,150,159,160,203],"School grounds":[9,41,68,97,109,150,159,160],"Blue spaces":[24,37,76,97,110,201],"Indoor / biophilic":[9,14,31,67],"Informal urban greenery":[9,41,73,159],"Type not specified":[65,101,127,134,150]},{"Walking / green exercise":[9,14,24,41,65,68,76,97,99,101,176,201,203],"Outdoor / nature-based activities":[37,176,203],"Frequency / duration of exposure":[24,37,65,73,101,109,127,150,159,160,185],"Social / recreational use":[9,24,73,101,109,110,176,190],"Mindfulness / sensory activities":[37,76,117,134,201,203],"Forest exposure / forest bathing":[37,97,117,134,201],"Gardening / horticulture":[],"Passive / ambient exposure":[9,31,41,67,68,97,159,160,190],"Blue-space activity":[110],"Use not specified":[]},{"Well-being / mental health":[9,24,41,65,67,68,73,76,101,109,127,134,150,159,160,176,185,203],"Stress reduction / coping":[14,24,31,37,67,68,76,99,101,110,117,127,134,176,190,201,203],"Social / emotional functioning":[9,37,73,109,110,117,134,185,201],"Mood / positive affect":[14,37,73,76,110,117,185,190,201],"Anxiety / depression":[31,41,68,99,101,176,201],"Restoration / attention":[14,31,37,41,97,117,160,190],"Other psychological outcomes":[9,31,37,97,109,117,134,185],"Outcome not specified":[]}];
+const allPapers=[9, 14, 24, 31, 37, 41, 65, 67, 68, 73, 76, 97, 99, 101, 109, 110, 117, 127, 134, 150, 159, 160, 176, 185, 190, 201, 203];
+const data={columns:groups.map((group,k)=>Object.entries(group).map(([name,ids])=>({id:`${k}:${name}`,name,paper:ids.length,matched:ids.length,col:k,ids}))),edges:[]};
+let edgeId=0;
+for(let stage=0;stage<2;stage++)for(const a of data.columns[stage])for(const b of data.columns[stage+1]){
+ const matches=a.ids.filter(id=>b.ids.includes(id)).sort((x,y)=>x-y);
+ if(matches.length)data.edges.push({source:a.id,target:b.id,n:matches.length,unspecified:a.name.toLowerCase().includes('not specified')||b.name.toLowerCase().includes('not specified'),edgeId:edgeId++,ids:matches});
+}
+const svg=document.getElementById('viz');
+const ns='http://www.w3.org/2000/svg';let selected=null;
+function el(tag,attrs,parent){const e=document.createElementNS(ns,tag);for(const [k,v] of Object.entries(attrs||{}))e.setAttribute(k,v);(parent||svg).appendChild(e);return e}
+const palette=['#9cbda5','#609c7b','#317355'];
+const coords=new Map(),nodeEls=new Map(),edgeEls=[];
+const xs=[165,640,1115],headings=['GREEN SPACE CHARACTERISTICS','GREEN SPACE USE','MENTAL WELL-BEING'];
+headings.forEach((h,k)=>{let t=el('text',{x:xs[k],y:51,'text-anchor':'middle',fill:'#244e37','font-size':'17','font-weight':'bold'});t.textContent=h});
+for(let k=0;k<3;k++){let items=data.columns[k];items.forEach((item,i)=>{let y=i===items.length-1?894:112+i*(710/(items.length-2));coords.set(item.id,{x:xs[k],y})})}
+const edgeLayer=el('g',{}),nodeLayer=el('g',{});
+for(const d of data.edges){
+ const a=coords.get(d.source),b=coords.get(d.target);
+ const path=`M ${a.x+135} ${a.y} C ${a.x+245} ${a.y}, ${b.x-245} ${b.y}, ${b.x-135} ${b.y}`;
+ const p=el('path',{d:path,stroke:d.unspecified?'#b4bdb6':palette[Number(d.source[0])+1],'stroke-width':Math.min(23,1.3+d.n*2.1),opacity:d.unspecified?'.12':'.20','stroke-linecap':'round',class:'edge'},edgeLayer);
+ p.addEventListener('mousemove',e=>tip(e,`${name(d.source)} → ${name(d.target)}: ${d.n} stud${d.n===1?'y':'ies'}`));
+ p.addEventListener('mouseleave',hideTip);p.addEventListener('click',()=>showPaperIds(d.edgeId));edgeEls.push({d,p});
+}
+for(let k=0;k<3;k++)for(const item of data.columns[k]){
+ const {x,y}=coords.get(item.id),missing=item.name.toLowerCase().includes('not specified'),unmatched=item.matched===0&&!missing;
+ const g=el('g',{class:'node',tabindex:'0',role:'button','aria-label':`${item.name}, ${item.paper} papers`},nodeLayer);
+ el('rect',{x:x-137,y:y-23,width:274,height:46,rx:9,fill:unmatched?'#eef2ef':missing?'#e0e5e1':palette[k],stroke:'#d5e1d8'},g);
+ let t=el('text',{x,y:y-3,'text-anchor':'middle',fill:k===0||missing||unmatched?'#21432f':'white','font-size':'13'},g);t.textContent=item.name;
+ let q=el('text',{x,y:y+13,'text-anchor':'middle',fill:k===0||missing?'#345841':'#e8f5eb','font-size':'11'},g);q.textContent=`N = ${item.paper}`;
+ g.addEventListener('click',()=>choose(item.id));g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose(item.id)}});nodeEls.set(item.id,g);
+}
+const itemById=new Map(data.columns.flat().map(x=>[x.id,x]));
+function name(id){return itemById.get(id)?.name||id}
+function tip(e,t){let v=document.getElementById('tooltip');v.textContent=t;v.style.display='block';v.style.left=Math.max(0,Math.min(e.clientX+14,window.innerWidth-300))+'px';v.style.top=Math.min(e.clientY+12,window.innerHeight-55)+'px'}
+function hideTip(){document.getElementById('tooltip').style.display='none'}
+function choose(id){selected=selected===id?null:id;render()}
+function render(){
+ hideTip();const related=new Set(selected?[selected]:[]),matching=[],activeEdges=new Set();
+ if(selected){
+  const col=Number(selected.split(':')[0]);
+  if(col===0){const mids=new Set();edgeEls.forEach(({d})=>{if(d.source===selected){activeEdges.add(d);mids.add(d.target)}});edgeEls.forEach(({d})=>{if(mids.has(d.source)&&d.target.startsWith('2:'))activeEdges.add(d)})}
+  else if(col===2){const mids=new Set();edgeEls.forEach(({d})=>{if(d.target===selected){activeEdges.add(d);mids.add(d.source)}});edgeEls.forEach(({d})=>{if(mids.has(d.target)&&d.source.startsWith('0:'))activeEdges.add(d)})}
+  else{edgeEls.forEach(({d})=>{if(d.source===selected||d.target===selected)activeEdges.add(d)})}
+  activeEdges.forEach(d=>{related.add(d.source);related.add(d.target);matching.push(d)});
+ }
+ for(const {d,p} of edgeEls){p.classList.toggle('dim',!!selected&&!activeEdges.has(d));p.classList.toggle('highlight',!!selected&&activeEdges.has(d));p.style.pointerEvents=selected&&!activeEdges.has(d)?'none':'stroke'}
+ for(const [id,g] of nodeEls){g.classList.toggle('dim',!!selected&&!related.has(id));g.querySelector('rect').setAttribute('stroke',selected===id?'#102f20':'#d5e1d8');g.querySelector('rect').setAttribute('stroke-width',selected===id?'3':'1')}
+ const title=document.getElementById('panelTitle'),txt=document.getElementById('panelText'),details=document.getElementById('details');details.replaceChildren();
+ if(!selected){title.textContent='Select a category';txt.textContent='Click a category to highlight related connections. Click any highlighted line or a Paper IDs link to see the exact studies. Click the category again or use Show all connections to reset.';return}
+ const item=itemById.get(selected);title.textContent=item.name;txt.textContent=`${matching.length} visible connections along the highlighted pathways. Counts are calculated for each category pair; they do not establish that the same studies support a complete three-column pathway.`;
+ for(const stage of [0,1]){
+  const matches=matching.filter(d=>Number(d.source.split(':')[0])===stage).sort((a,b)=>b.n-a.n);
+  if(!matches.length)continue;
+  const h=document.createElement('h3');h.textContent=stage===0?'Green Space Types → Green Space Use':'Green Space Use → Mental Well-Being';details.appendChild(h);
+  const ul=document.createElement('ul');matches.forEach(d=>{const li=document.createElement('li');li.append(document.createTextNode(`${name(d.source)} → ${name(d.target)}: ${d.n} stud${d.n===1?'y':'ies'} · `));const a=document.createElement('a');a.href='#edge-'+d.edgeId;a.textContent='Paper IDs';a.addEventListener('click',e=>{e.preventDefault();showPaperIds(d.edgeId)});li.appendChild(a);ul.appendChild(li)});details.appendChild(ul);
+ }
+ const p=document.createElement('p');p.textContent=`Displayed category N: ${item.paper}. N is based on the supplied Paper ID list for this category.`;details.prepend(p);
+}
+document.getElementById('reset').addEventListener('click',()=>{selected=null;render()});
+// Connection explorer at bottom of the page.
+const list=document.getElementById('list');
+document.getElementById('allids').textContent=allPapers.join(', ');
+for(const d of data.edges){
+ const entry=document.createElement('section');entry.className='entry';entry.id='edge-'+d.edgeId;
+ entry.dataset.search=`${name(d.source)} ${name(d.target)} ${d.ids.join(' ')} ${d.ids.join(', ')}`.toLowerCase();
+ let heading=document.createElement('h2');heading.textContent=`${name(d.source)} → ${name(d.target)}`;entry.appendChild(heading);
+ let count=document.createElement('p');let strong=document.createElement('strong');strong.textContent=`N = ${d.n} unique papers`;count.append(strong);entry.append(count);
+ let info=document.createElement('p');info.append(document.createTextNode('Paper IDs: '+d.ids.join(', ')));entry.append(info);
+ const details=document.createElement('details');const summary=document.createElement('summary');summary.textContent=`View Paper IDs (${d.n})`;details.append(summary);
+ const ol=document.createElement('ol');for(const id of d.ids){const li=document.createElement('li');li.textContent=`Paper ${id}`;ol.append(li)}details.append(ol);entry.append(details);list.append(entry);
+}
+function showPaperIds(id){
+ const d=data.edges.find(x=>x.edgeId===id),entry=document.getElementById('edge-'+id);if(!d||!entry)return;
+ document.getElementById('panelTitle').textContent='Paper IDs: '+name(d.source)+' → '+name(d.target);
+ document.getElementById('panelText').textContent=`N = ${d.n} unique papers | Paper IDs: ${d.ids.join(', ')}`;
+ const panel=document.getElementById('details');panel.replaceChildren();
+ const ul=document.createElement('ul');for(const id of d.ids){const li=document.createElement('li');li.textContent='Paper '+id;ul.append(li)}panel.append(ul);
+ const btn=document.createElement('button');btn.textContent='View in full list';btn.addEventListener('click',()=>{entry.hidden=false;document.getElementById('search').value='';filterPapers();entry.querySelector('details').open=true;entry.scrollIntoView({behavior:'smooth',block:'start'})});panel.append(btn);
+ document.getElementById('selection-panel').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+const paperSearch=document.getElementById('search'),paperEntries=[...document.querySelectorAll('.entry')];
+function filterPapers(){const q=paperSearch.value.toLowerCase().trim();let count=0;for(const entry of paperEntries){const visible=entry.dataset.search.includes(q);entry.hidden=!visible;if(visible)count++}document.getElementById('total').textContent=count+' connections shown'}
+paperSearch.addEventListener('input',filterPapers);filterPapers();render();
+if(location.hash.startsWith('#edge-')){const entry=document.getElementById(location.hash.slice(1));if(entry){entry.scrollIntoView();entry.querySelector('details').open=true}}
+</script>
+</body></html>
